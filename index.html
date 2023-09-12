@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcualtor App</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <article class="cal-section">
+        <div class="calcualtor-section">
+          <div class="calpad">
+            <input type="text" class="cal-display" />
+            <input
+              type="number"
+              id="ops"
+              min="0"
+              max="1000000000"
+              class="operation-display"
+            />
+            <div class="button-pad">
+              <div class="button-row-ac">
+                <button class="pad-button-ac" id="ac">AC</button>
+              </div>
+              <div class="button-row">
+                <button id="one" class="pad-button numeric-colors">1</button>
+                <button id="two" class="pad-button numeric-colors">2</button>
+                <button id="three" class="pad-button numeric-colors">3</button>
+                <button id="plus" class="pad-button operations-colors">
+                  +
+                </button>
+              </div>
+              <div class="button-row">
+                <button id="four" class="pad-button numeric-colors">4</button>
+                <button id="five" class="pad-button numeric-colors">5</button>
+                <button id="six" class="pad-button numeric-colors">6</button>
+                <button id="minus" class="pad-button operations-colors">
+                  -
+                </button>
+              </div>
+              <div class="button-row">
+                <button id="seven" class="pad-button numeric-colors">7</button>
+                <button id="eight" class="pad-button numeric-colors">8</button>
+                <button id="nine" class="pad-button numeric-colors">9</button>
+                <button id="multiply" class="pad-button operations-colors">
+                  x
+                </button>
+              </div>
+              <div class="button-row">
+                <button id="zero" class="pad-button numeric-colors">0</button>
+                <button id="point" class="pad-button numeric-colors">.</button>
+                <button id="equal" class="pad-button equal-colors">=</button>
+                <button id="division" class="pad-button operations-colors">
+                  /
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result-display-section">
+          <div class="result-container" id="rescont">
+            <h1 class="result-heading">Result:</h1>
+            <h5 class="sub-heading">
+              First Value: <span class="firstval" id="first"></span>
+            </h5>
+            <h5 class="sub-heading">
+              Second Value: <span class="secondval" id="second"></span>
+            </h5>
+            <h5 class="sub-heading">
+              operation: <span class="opval" id="opsd"></span>
+            </h5>
+            <h5 class="sub-heading">
+              result: <span class="opval" id="res"></span>
+            </h5>
+          </div>
+        </div>
+      </article>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

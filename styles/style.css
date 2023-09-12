@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1.5rem "times new romans";
+  min-height: 100vh;
+  background-color: palegoldenrod;
+}
+
+.cal-section {
+  border: 5px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3.5rem;
+}
+
+.calcualtor-section {
+  width: 50%;
+  height: 80vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: cadetblue; */
+}
+
+.result-display-section {
+  width: 50%;
+  height: 80vh;
+  background-color: lightblue;
+  border-left: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-container {
+  width: 40%;
+  height: 175px;
+  background-color: bisque;
+  border-radius: 15px;
+  border: 5px solid black;
+  padding: 0.4rem;
+  display: none;
+}
+
+.calpad {
+  width: 50%;
+  height: 70vh;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border: 4px solid black;
+}
+
+.cal-display {
+  width: 50%;
+  margin: 1rem;
+  height: 29px;
+}
+
+.operation-display {
+  width: 90%;
+  margin: 1rem;
+  height: 40px;
+  border-radius: 15px;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+.button-row-ac {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.button-pad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pad-button-ac {
+  width: 120px;
+  height: 50px;
+  background-color: orange;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.pad-button-ac:hover {
+  box-shadow: 0px 0px 2px 4px orange;
+}
+
+.pad-button {
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+}
+
+.numeric-colors {
+  background-color: crimson;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.numeric-colors:hover {
+  box-shadow: 0px 0px 2px 4px crimson;
+}
+
+.equal-colors {
+  background-color: blue;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.equal-colors:hover {
+  box-shadow: 0px 0px 2px 4px blue;
+}
+
+.operations-colors {
+  background-color: darkseagreen;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+.operations-colors:hover {
+  box-shadow: 0px 0px 2px 4px darkseagreen;
+}
